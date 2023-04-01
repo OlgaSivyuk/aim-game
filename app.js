@@ -86,13 +86,11 @@ function createRandomCircle() {
   const { width, height } = board.getBoundingClientRect();
   const x = getRundomNumber(0, width - size);
   const y = getRundomNumber(0, height - size);
-//   const color = getRandomColor();
   circle.classList.add('circle');
   circle.style.width = `${size}px`;
   circle.style.height = `${size}px`;
   circle.style.top = `${y}px`;
   circle.style.left = `${x}px`;
-//   circle.style.background = `linear-gradient(90deg, ${color[0]} 0%, ${color[1]} 47%, ${color[2]} 100%)`;
   setColor(circle)
   board.append(circle);
 };
